@@ -321,20 +321,20 @@ im_test=random_images[5000:10000]
 
 
 ##### 1 - Define training data when no given network
-if network=='':
+#if network=='':
 
-    steg=np.add(im_train,np.ones(im_train.shape,dtype=np.int)*STEGO)
-    arr_train = np.concatenate((im_train,steg),axis=0)
+steg=np.add(im_train,np.ones(im_train.shape,dtype=np.int)*STEGO)
+arr_train = np.concatenate((im_train,steg),axis=0)
 
     
-    np.random.shuffle(arr_train)
-    indexes_train = [arr_train[i:i+BATCH_SIZE] for i in xrange(0, len(arr_train), BATCH_SIZE)]
-    train_size = len(indexes_train)
+np.random.shuffle(arr_train)
+indexes_train = [arr_train[i:i+BATCH_SIZE] for i in xrange(0, len(arr_train), BATCH_SIZE)]
+train_size = len(indexes_train)
         
 
-print arr_train
+#print arr_train
 
-print indexes_train
+#print indexes_train
 
 
 

@@ -4,6 +4,7 @@ Improving Blind Steganalysis in Spatial Domain using a Criterion to Choose the A
 This project shows the code of the following paper.
 http://arxiv.org/abs/1612.08882
 
+
 The authors of this paper are: Jean-François Couchot, Raphaël Couturier and Michel Salomon
 
 
@@ -30,3 +31,6 @@ python  conv_stego20.py --cover_dir /to_be_changed/cover/  --stego_dir
 name_of_network
 
 
+It should be noticed that some parameters need to be changed for some
+experiments: learning rate, epsilon for the log softmax, epsilon for
+batch normalization
